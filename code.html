@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Welcome Global Healthcare | Clinical Futurism &amp; Global Precision</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&amp;family=Manrope:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "on-secondary-fixed": "#0b1c30",
+                        "tertiary-container": "#001e2f",
+                        "primary-fixed": "#dae2ff",
+                        "on-tertiary-fixed-variant": "#004c6e",
+                        "on-primary-container": "#5280e6",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-tint": "#2559bd",
+                        "secondary": "#505f76",
+                        "on-tertiary-fixed": "#001e2f",
+                        "on-primary": "#ffffff",
+                        "surface-bright": "#f7f9fb",
+                        "on-primary-fixed-variant": "#00419e",
+                        "on-secondary-fixed-variant": "#38485d",
+                        "surface-dim": "#d8dadc",
+                        "secondary-container": "#d0e1fb",
+                        "outline": "#76777d",
+                        "on-error-container": "#93000a",
+                        "on-surface": "#191c1e",
+                        "surface-container-highest": "#e0e3e5",
+                        "primary-container": "#001946",
+                        "tertiary": "#000000",
+                        "primary-fixed-dim": "#b1c5ff",
+                        "primary": "#000000",
+                        "inverse-surface": "#2d3133",
+                        "secondary-fixed-dim": "#b7c8e1",
+                        "on-primary-fixed": "#001946",
+                        "tertiary-fixed": "#c9e6ff",
+                        "inverse-on-surface": "#eff1f3",
+                        "secondary-fixed": "#d3e4fe",
+                        "inverse-primary": "#b1c5ff",
+                        "surface": "#f7f9fb",
+                        "outline-variant": "#c6c6cd",
+                        "on-tertiary-container": "#008cc7",
+                        "error": "#ba1a1a",
+                        "surface-container-low": "#f2f4f6",
+                        "on-secondary-container": "#54647a",
+                        "surface-variant": "#e0e3e5",
+                        "surface-container": "#eceef0",
+                        "background": "#f7f9fb",
+                        "on-background": "#191c1e",
+                        "surface-container-high": "#e6e8ea",
+                        "on-tertiary": "#ffffff",
+                        "on-surface-variant": "#45464d",
+                        "error-container": "#ffdad6",
+                        "on-error": "#ffffff",
+                        "on-secondary": "#ffffff",
+                        "tertiary-fixed-dim": "#89ceff"
+                    },
+                    fontFamily: {
+                        "headline": ["Manrope", "sans-serif"],
+                        "body": ["Inter", "sans-serif"],
+                        "label": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" },
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        .glass-panel {
+            background: rgba(247, 249, 251, 0.8);
+            backdrop-filter: blur(20px);
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, #000000 0%, #001946 50%, #5280e6 100%);
+        }
+        .text-glow {
+            text-shadow: 0 0 20px rgba(82, 128, 230, 0.3);
+        }
+        .pulse-indicator {
+            box-shadow: 0 0 0 rgba(0, 140, 199, 0.4);
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0% { box-shadow: 0 0 0 0 rgba(0, 140, 199, 0.7); }
+            70% { box-shadow: 0 0 0 10px rgba(0, 140, 199, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(0, 140, 199, 0); }
+        }
+    </style>
+</head>
+<body class="bg-surface font-body text-on-surface selection:bg-on-primary-container selection:text-white">
+<!-- Top Navigation Shell -->
+<nav class="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-950/80 backdrop-blur-md shadow-sm dark:shadow-none">
+<div class="flex justify-between items-center max-w-7xl mx-auto px-5 md:px-8 h-16 md:h-20">
+<div class="text-sm md:text-xl font-black tracking-tighter text-slate-900 dark:text-white leading-tight">
+    WELCOME GLOBAL<br class="sm:hidden"/> HEALTHCARE
+</div>
+<div class="hidden md:flex items-center gap-x-8">
+<a class="font-manrope font-bold tracking-tight text-sm uppercase text-blue-600 dark:text-blue-400 border-b-2 border-blue-600 dark:border-blue-400 pb-1" href="#home">Home</a>
+<a class="font-manrope font-bold tracking-tight text-sm uppercase text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-100 transition-colors" href="#about">About</a>
+<a class="font-manrope font-bold tracking-tight text-sm uppercase text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-100 transition-colors" href="#services">Services</a>
+<a class="font-manrope font-bold tracking-tight text-sm uppercase text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-100 transition-colors" href="#products">Products</a>
+<a class="font-manrope font-bold tracking-tight text-sm uppercase text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-100 transition-colors" href="#process">Process</a>
+<a class="font-manrope font-bold tracking-tight text-sm uppercase text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-100 transition-colors" href="#contact">Contact</a>
+</div>
+<div class="flex items-center gap-3">
+<a href="#contact" class="hidden sm:block bg-primary text-on-primary px-5 py-2 text-sm font-bold tracking-tighter uppercase transition-transform active:scale-95">
+    Get Started
+</a>
+<button id="mobile-nav-btn" class="md:hidden flex flex-col gap-1.5 p-2" aria-label="Open menu">
+    <span class="block w-6 h-0.5 bg-slate-900 dark:bg-white transition-all"></span>
+    <span class="block w-6 h-0.5 bg-slate-900 dark:bg-white transition-all"></span>
+    <span class="block w-6 h-0.5 bg-slate-900 dark:bg-white transition-all"></span>
+</button>
+</div>
+</div>
+<div class="bg-slate-100/50 dark:bg-slate-800/50 h-[1px] w-full absolute bottom-0"></div>
+</nav>
+
+<!-- Mobile Menu Drawer -->
+<div id="mobile-nav-menu" class="fixed inset-0 z-[60] hidden">
+  <div id="mobile-nav-overlay" class="absolute inset-0 bg-black/50"></div>
+  <div class="absolute top-0 right-0 h-full w-72 bg-white dark:bg-slate-950 shadow-2xl flex flex-col pt-20 pb-8 px-8 gap-5">
+    <button id="mobile-nav-close" class="absolute top-4 right-4 w-10 h-10 flex items-center justify-center rounded-full bg-slate-100 dark:bg-slate-800 text-slate-900 dark:text-white hover:bg-blue-100 transition-colors">
+      <span class="material-symbols-outlined">close</span>
+    </button>
+    <a class="text-base font-bold uppercase tracking-widest hover:text-blue-600 transition-colors" href="#home" onclick="closeMobileNav()">Home</a>
+    <a class="text-base font-bold uppercase tracking-widest hover:text-blue-600 transition-colors" href="#about" onclick="closeMobileNav()">About</a>
+    <a class="text-base font-bold uppercase tracking-widest hover:text-blue-600 transition-colors" href="#services" onclick="closeMobileNav()">Services</a>
+    <a class="text-base font-bold uppercase tracking-widest hover:text-blue-600 transition-colors" href="#products" onclick="closeMobileNav()">Products</a>
+    <a class="text-base font-bold uppercase tracking-widest hover:text-blue-600 transition-colors" href="#process" onclick="closeMobileNav()">Process</a>
+    <a class="text-base font-bold uppercase tracking-widest hover:text-blue-600 transition-colors" href="#contact" onclick="closeMobileNav()">Contact</a>
+    <a href="#contact" onclick="closeMobileNav()" class="mt-4 bg-primary text-white font-bold text-sm uppercase tracking-widest text-center py-3 px-6">Get Started</a>
+  </div>
+</div>
+<!-- 1. Hero Section -->
+<section class="relative min-h-screen flex items-center pt-16 md:pt-20 overflow-hidden hero-gradient" id="home">
+<div class="absolute inset-0 opacity-20" data-alt="high-tech laboratory interior with blue ambient lighting and blurred scientific equipment in the background" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAyAQZOvf4Jjc6CUX8FN104DeY2cXDh6OYO0DP7UeYzs0V6dsw3unloSxecsvqphmT6vuG8jDa7xKFj7c9K6GYChiHpIg_7uh4aFnI-s98GxjXusjaRQucc1DYFngSwnuzlMC1WsnvQfeOH_jTIaPZDiR5-fjTErmD-9E-yXSZ3igQ3p-u68EnRJ_fCY6L9Ko7_ZAq6k8TvEa5XJOoXZ3JMr7AoD1A0qzKcADvfX_nYzGC0EdjSM-RQ_SCVK-wuwW1Y1P0d2SgFmlXL'); background-size: cover; background-position: center;"></div>
+<div class="hidden md:block absolute right-0 top-1/4 w-1/2 h-2/3 opacity-30 pointer-events-none">
+<img alt="" class="object-cover w-full h-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCtJ1Z03JDSvtboc5kuYw6ao52ogNeW28h0APYDzh02O6hkYnHWHxqqfh-Src-gG4QOwTx6_BiNAxgYHch_4ezxj29YC4pSuWP3ldd4w8xpMiH0DUa738vdAwL6wpwgFU4_FkJCUYJt2FuiGrtiHCSKo_CyvEbxQqyBiG0UdvU6Bo59wbWREK0zW1-X4V2VdTlQK50u-SLjVIErD3C3mGQ_UIUP_eLs9_mBwuUj10XPwZUxLR84q44K0KIZN4H4NmI597lSEcKSsEr4"/>
+</div>
+<div class="relative max-w-7xl mx-auto px-5 md:px-8 w-full z-10 py-16 md:py-0">
+<div class="max-w-3xl">
+<div class="flex items-center gap-3 mb-4 md:mb-6">
+<span class="w-8 md:w-12 h-1 bg-on-primary-container"></span>
+<span class="font-label text-xs md:text-sm uppercase tracking-[0.15em] md:tracking-[0.2em] text-on-primary-container font-semibold">Welcome Global Healthcare</span>
+</div>
+<h1 class="font-headline text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-extrabold text-white leading-[1.1] mb-6 md:mb-8 tracking-tighter text-glow">
+                    Global Pharmaceutical Excellence
+                </h1>
+<p class="font-body text-base md:text-xl text-primary-fixed-dim max-w-xl leading-relaxed mb-8 md:mb-12">
+                    Bridging international borders with high-precision logistics and WHO-GMP certified pharmaceuticals for a healthier tomorrow.
+                </p>
+<div class="flex flex-col sm:flex-row flex-wrap gap-3 md:gap-4">
+<a href="#services" class="bg-on-primary-container text-white px-8 md:px-10 py-3 md:py-4 font-headline font-bold text-base md:text-lg hover:bg-surface-tint transition-all group inline-flex items-center justify-center">
+                        Explore Network
+                        <span class="material-symbols-outlined ml-2 group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+<button class="border border-white/30 backdrop-blur-md text-white px-8 md:px-10 py-3 md:py-4 font-headline font-bold text-base md:text-lg hover:bg-white/10 transition-all">
+                        Our Certifications
+                    </button>
+</div>
+</div>
+</div>
+<!-- Active Operations indicator - hidden on small screens -->
+<div class="hidden sm:flex absolute bottom-8 md:bottom-12 right-5 md:right-12 items-center gap-4 md:gap-6">
+<div class="flex flex-col items-end">
+<span class="text-white/50 text-xs font-label uppercase tracking-widest">Active Operations</span>
+<span class="text-white font-headline text-lg md:text-2xl font-bold">24/7 Global</span>
+</div>
+<div class="w-4 h-4 bg-on-tertiary-container rounded-full pulse-indicator"></div>
+</div>
+</section>
+<!-- 2. Global Network Section -->
+<section class="py-16 md:py-32 bg-surface">
+<div class="max-w-7xl mx-auto px-5 md:px-8">
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-10 lg:gap-16 items-start mb-12 md:mb-20">
+<div class="lg:col-span-1">
+<h2 class="font-headline text-4xl font-extrabold text-primary mb-6 tracking-tight">Our Global Footprint</h2>
+<p class="text-on-secondary-container text-lg leading-relaxed mb-8">
+                        Operating across continents, our logistics network ensures that life-saving medications reach their destinations with zero compromise on quality.
+                    </p>
+<div class="space-y-4">
+<button class="w-full flex justify-between items-center p-4 bg-surface-container-lowest hover:bg-secondary-container transition-colors group">
+<span class="font-bold uppercase text-xs tracking-widest">Africa</span>
+<span class="material-symbols-outlined text-on-primary-container">language</span>
+</button>
+<button class="w-full flex justify-between items-center p-4 bg-surface-container-lowest hover:bg-secondary-container transition-colors group">
+<span class="font-bold uppercase text-xs tracking-widest">Latin America</span>
+<span class="material-symbols-outlined text-on-primary-container">language</span>
+</button>
+<button class="w-full flex justify-between items-center p-4 bg-surface-container-lowest hover:bg-secondary-container transition-colors group">
+<span class="font-bold uppercase text-xs tracking-widest">GCC &amp; CIS</span>
+<span class="material-symbols-outlined text-on-primary-container">language</span>
+</button>
+<button class="w-full flex justify-between items-center p-4 bg-surface-container-lowest hover:bg-secondary-container transition-colors group">
+<span class="font-bold uppercase text-xs tracking-widest">SE Asia &amp; Europe</span>
+<span class="material-symbols-outlined text-on-primary-container">language</span>
+</button>
+</div>
+</div>
+<div class="lg:col-span-2 relative">
+<div class="aspect-[16/9] bg-surface-container-high rounded-xl overflow-hidden shadow-2xl">
+<img alt="World Map" class="w-full h-full object-cover opacity-50 grayscale" data-alt="a stylized dark world map with digital blue glowing connection points and lines between major global cities" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAvvpNSsB5kiSGb_boVh_b4UeY8X-WkDr4nD6yLZti_JpZIzAjB1sAv4fjVhE8te7sVa0w1raYsJyz1mkCa9HtJ9zNytX2MI2U0BHYpuYPZpffZ7-XbYv3iI3lyS3yzz6Q0vc7h2wJ18L5raPw8wVoMz_GSfSPt1cD15RtHmSuOnA6JjXFo8q-MYCl3hNiurTcr4L7djSpcr5hg_kJ746dNkP7wgBtdKIxkpT3Oz_vc57x0lRccakTNIsAm4-xVV6xwcqYxlsiLFSj6"/>
+<div class="absolute inset-0 flex items-center justify-center">
+<div class="text-center">
+<span class="material-symbols-outlined text-6xl text-on-primary-container animate-bounce">location_on</span>
+<div class="bg-white px-4 py-2 mt-4 shadow-lg rounded-sm font-bold text-xs">GLOBAL LOGISTICS HUB</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 3. About Us (The Science of Trust) -->
+<section class="py-16 md:py-32 bg-surface-container-low overflow-hidden" id="about">
+<div class="max-w-7xl mx-auto px-5 md:px-8">
+<div class="flex flex-col md:flex-row gap-12 md:gap-20">
+<div class="md:w-1/2 relative">
+<div class="absolute -top-10 -left-10 w-40 h-40 bg-on-primary-container/5 rounded-full"></div>
+<h3 class="font-headline text-3xl md:text-5xl font-extrabold text-primary mb-8 md:mb-10 leading-tight">The Science of Trust &amp; Reliability</h3>
+<div class="space-y-8">
+<div class="flex gap-6">
+<div class="flex-shrink-0 w-12 h-12 bg-white flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-on-primary-container">verified</span>
+</div>
+<div>
+<h4 class="font-bold text-lg mb-2">WHO-GMP Certified</h4>
+<p class="text-on-secondary-container">Adhering to the most stringent international manufacturing standards ensuring global compliance.</p>
+</div>
+</div>
+<div class="flex gap-6">
+<div class="flex-shrink-0 w-12 h-12 bg-white flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-on-primary-container">inventory_2</span>
+</div>
+<div>
+<h4 class="font-bold text-lg mb-2">1200+ Products</h4>
+<p class="text-on-secondary-container">A massive portfolio covering critical care, lifestyle medicines, and specialized therapeutics.</p>
+</div>
+</div>
+<div class="flex gap-6">
+<div class="flex-shrink-0 w-12 h-12 bg-white flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-on-primary-container">biotech</span>
+</div>
+<div>
+<h4 class="font-bold text-lg mb-2">Advanced R&amp;D</h4>
+<p class="text-on-secondary-container">Continuous innovation driven by dedicated research teams and modern laboratory infrastructures.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="md:w-1/2">
+<div class="grid grid-cols-2 gap-4">
+<div class="aspect-square bg-surface-container-highest overflow-hidden">
+<img alt="R&amp;D" class="w-full h-full object-cover" data-alt="scientist in white protective gear looking through a microscope in a sterile laboratory environment" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB2lSuRabsvGYYfSA32pV0NJ-3cP7e6UPepRkakkBZiGN1AoSUNS9N3NX2grLKvv3lJABtWO1y6JTZFcP9w0UP47J-UwJIdEsaHdRU9R1BYEMRkMA80YEbka-W8kHlYank0a4lD9NQXGFHHz2wPZXw6JV8MQzuMJHVBmve5zhlJn8yHN91dNXXws0rnnt8Aa0tNx-2B4a8Bn4Ym-FF0CRPu0RL6Ic_8gihcETWwG_wYDpC7lIYZLvzklkxesX64GpBBRh37rDO11_xm"/>
+</div>
+<div class="aspect-square bg-surface-container-highest mt-8 overflow-hidden">
+<img alt="Medicine" class="w-full h-full object-cover" data-alt="close up of pharmaceutical production line with white tablets being sorted automatically" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAu7O_7IBwxSaSn_Bhaypc9IYyxZf_tbX12BqmoMAT0tusXZTQd_XdPCkKLdP05udwOe7oXofVMTkk5F19mu81vD8O-SplyfAhWOlQS6hw4q8UPQ3v6XH--nXlzOjvFada3Hrkn6PaWwaL3Aaa9ITDnXNUY_5VhMI9QLyUjn733KSmSeG95tNnyDv8-NbnS7vdQJuuP7Y0D5p6kNS3TctYbOZP0wfAyEz3p-_QTLeFwBJne5fZR7iclIUvyx4mfrOCTow-BcUd1i4_g"/>
+</div>
+<div class="aspect-square bg-surface-container-highest -mt-8 overflow-hidden">
+<img alt="Lab" class="w-full h-full object-cover" data-alt="clean room pharmaceutical manufacturing facility with stainless steel equipment and pipes" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDR3wBUd1rkTCUToRuvIg_d4RwLH9BPPqPwdW8RSPkiD25gUx0qp2y3pRsDpJnzBylP-vUJz6UXHUZfmxezUyK9CAno3ZT0Do1dyQgDv7bWmpXvRHi2gHNYUZmtKrNnyFVhf7vxVQfMvv-elcjxC-3KO2bjTOEcRZyu1VxeqHAz3P6Ln5KxBEbWjw7nz5fRCNEd7Tb8pnpzgEe-HCU9lqyCmDryoYFZiHbO99_YUlapH_nPoyltPdgeKkrACZi8-iJTw62-KNoI9j_4"/>
+</div>
+<div class="aspect-square bg-surface-container-highest overflow-hidden">
+<img alt="Tablets" class="w-full h-full object-cover" data-alt="professional packaging of medical products in a pharmaceutical warehouse" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDIgViyq6o-N3zaf8nes0uO5rRQs33X7VTpcBjJb38H8CYb-eV92ecjT8OEYybXTr8WUuUyvZRbKoL8chCL2nzB_otFL6uuqD8cKSQVJSzsIn_5xLfUt-w0gt_9xnfS3PZEGRuUQnJDfyWwlYTOPzp2G0p38Q9GELxWRlCa_a4Q567XQ7_d3-dVyyaPUco0EtzkW1RyV7dW0fCwh0TdJCWjSnGnh_z6GKy_D_gWIfMqAOPHodeTlHsaAiSiFDg0N6t2eH7B6YGm9EAx"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 4. Services Section (Bento Style) -->
+<section class="py-16 md:py-32 bg-surface" id="services">
+<div class="max-w-7xl mx-auto px-5 md:px-8">
+<div class="text-center mb-12 md:mb-20">
+<h2 class="font-headline text-3xl md:text-4xl font-extrabold text-primary mb-4">Core Capabilities</h2>
+<div class="w-20 h-1 bg-on-primary-container mx-auto"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-4">
+<!-- Large Card -->
+<div class="md:col-span-8 bg-surface-container-lowest p-7 md:p-10 border border-outline-variant/10 hover:shadow-xl transition-shadow flex flex-col md:flex-row gap-8 md:gap-10 group">
+<div class="flex-1">
+<span class="material-symbols-outlined text-4xl text-on-primary-container mb-6">factory</span>
+<h3 class="font-headline text-2xl font-bold mb-4">Contract Manufacturing</h3>
+<p class="text-on-secondary-container leading-relaxed">Scalable, WHO-compliant manufacturing solutions for global brands. We handle the complexity of production while you focus on the market.</p>
+</div>
+<div class="flex-1 overflow-hidden rounded-lg min-h-[200px]">
+<img alt="Manufacturing" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDUGMlQ0kbq0GWjcMdaRqzf_Ug_SaEs1mA4MRGn_355wZcYs4zcGNTrkd_d7varthVsERhTIFxeMLxiEYQtpkVwjCvHHSTXX05fWvCoieuGa_2y22DL6S9e-zPPmpbOKUCBBYNHitvMp5Z_0QZSBLNhNuv7cVOWBnkPwIAh7muGVfMVYUym_y6pH3flNmuNaZksHqYJYe5jebEhFwuPxXjTkOolnfpXSe86JS6GOCtUHZ8nDJaT7CjfEJwZKkY6T5AeXTnJT7fCy8gg"/>
+</div>
+</div>
+<!-- Small Card -->
+<div class="md:col-span-4 bg-primary-container text-white p-10 flex flex-col justify-between hover:bg-black transition-colors">
+<div>
+<span class="material-symbols-outlined text-4xl text-on-tertiary-container mb-6">label_important</span>
+<h3 class="font-headline text-2xl font-bold mb-4">Private Label</h3>
+<p class="text-blue-200">Customized branding and packaging solutions to launch your own pharmaceutical line rapidly.</p>
+</div>
+<span class="material-symbols-outlined self-end text-3xl">arrow_outward</span>
+</div>
+<!-- Mid Card 1 -->
+<div class="md:col-span-4 bg-surface-container-low p-10 border border-outline-variant/10">
+<span class="material-symbols-outlined text-4xl text-on-primary-container mb-6">gavel</span>
+<h3 class="font-headline text-xl font-bold mb-3">Regulatory Support</h3>
+<p class="text-on-secondary-container text-sm">Navigating international health regulations, documentation, and dossiers for market entry.</p>
+</div>
+<!-- Mid Card 2 -->
+<div class="md:col-span-4 bg-surface-container-low p-10 border border-outline-variant/10">
+<span class="material-symbols-outlined text-4xl text-on-primary-container mb-6">local_shipping</span>
+<h3 class="font-headline text-xl font-bold mb-3">Logistics Solutions</h3>
+<p class="text-on-secondary-container text-sm">Cold chain management and secure shipping routes for time-sensitive pharmaceutical cargo.</p>
+</div>
+<!-- Mid Card 3 -->
+<div class="md:col-span-4 bg-surface-container-low p-10 border border-outline-variant/10">
+<span class="material-symbols-outlined text-4xl text-on-primary-container mb-6">support_agent</span>
+<h3 class="font-headline text-xl font-bold mb-3">Post-Market Care</h3>
+<p class="text-on-secondary-container text-sm">Pharmacovigilance and technical support to ensure product success long after delivery.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- 5. Product Portfolio (Asymmetric Catalog) -->
+<section class="py-16 md:py-32 bg-surface-container-lowest" id="products">
+<div class="max-w-7xl mx-auto px-5 md:px-8">
+<div class="flex flex-col lg:flex-row gap-8 lg:gap-20 items-start lg:items-end mb-10 md:mb-16">
+<div class="flex-1">
+<h2 class="font-headline text-3xl md:text-5xl font-extrabold text-primary mb-4 md:mb-6">Product Portfolio</h2>
+<p class="text-on-secondary-container text-lg max-w-xl">
+                        Our specialized therapeutic divisions are engineered to meet global health challenges with precision-formulated medications.
+                    </p>
+</div>
+<div class="flex-shrink-0 w-full lg:w-96">
+<div class="relative">
+<input class="w-full bg-surface-container-low border-none p-5 focus:ring-2 focus:ring-on-primary-container font-label" placeholder="Search catalog..." type="text"/>
+<span class="material-symbols-outlined absolute right-5 top-5 text-on-secondary-container">search</span>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Category 1 -->
+<div class="group relative overflow-hidden bg-surface-container shadow-sm hover:shadow-2xl transition-all h-[320px] md:h-[450px]">
+<img alt="Cardiology" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="close up of a digital heart monitor in a medical setting with glowing red and blue vitals" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDt4O7KXay_wLNrRzT_4eItZ1MNsVShnXH2RJnVbohIjrJNmS2dbk8dcZt8s702eFJ8VCRjoDLliX47yREKh0pPGaG8-nH41xRpuyPYmKBZ6wiGP3m_8MxC2kw63B0G5ceCYjVmd2sRI94g-15B63JcMxfWFaeIV72tVqP4x8vv7bt1u04W9knfePWExUX1LSF6LM9LYnyGE1_ce7TVzTs_BY-efG2dhyDhaRf2lUpEXFX9V0uzjoh9yIWPAREj1a3cOWcEz6tkgb0w"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary-container via-primary-container/40 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-8 text-white">
+<span class="inline-block px-3 py-1 bg-on-tertiary-container text-[10px] font-bold uppercase tracking-widest mb-4">Top Division</span>
+<h3 class="font-headline text-3xl font-bold mb-2">Cardiovascular</h3>
+<p class="text-blue-200 text-sm opacity-0 group-hover:opacity-100 transition-opacity">Hypertension, Statins, and Cardiac support agents.</p>
+</div>
+</div>
+<!-- Category 2 -->
+<div class="group relative overflow-hidden bg-surface-container shadow-sm hover:shadow-2xl transition-all h-[320px] md:h-[450px] lg:mt-12">
+<img alt="Diabetes" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="professional medical display of insulin pens and blood sugar monitoring equipment" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBHfe0XeGyWXMUI4fWs7oI0Jn-3fm6HrYx3exRGfrZZgKQEPFb64hHSi_hzBadL9swojep3jKYSw6End7JExJAvxhAt2Di90zCZOZBXfSc2tuOjGVl5CVbPP82N2vZHXQedxejAwpcC6dGFtg-FQ3hksVrFW13MP7PxT5M3V554IUEoVRYBk8LZm_JUB8eHJ9JGbw-wwwIaNM0bT3vbjlZn8LVWhK9OUJKOeX6dA9NBZgVt3nAQ3KIa-6MwcTJ9wctO1cZVA4pMMcsm"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary-container via-primary-container/40 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-8 text-white">
+<h3 class="font-headline text-3xl font-bold mb-2">Anti-Diabetic</h3>
+<p class="text-blue-200 text-sm opacity-0 group-hover:opacity-100 transition-opacity">Metformin combinations and modern oral hypoglycemics.</p>
+</div>
+</div>
+<!-- Category 3 -->
+<div class="group relative overflow-hidden bg-surface-container shadow-sm hover:shadow-2xl transition-all h-[320px] md:h-[450px]">
+<img alt="Antibiotics" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="various colorful medicinal capsules and pills spilled on a clean white surface with sharp shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBD6OY5uHPcej6h_iU75-HSVQXjDKZT_xP1CmCegyz9_v__9qYpEL1Ee6PYrZ0SAwx4p-IDRgcMDVRwu0oY2Cms7oMo2MpXCh248HuWkaQ2qLNcjLZfsujUsoSeyeynzHH9TVeEoVwIX-bv3sLpmBgKtD-43zPEBxkGG5M6H48J2iGYn3r-q1Qrkt3wYacmsisuOzfa2Wgi4aDmHYDEm5MENGB25G9XRhlgtbfqyFm2cy72iQmmIvvIMRaHN_G_fVQsCuzEXMa0IC1h"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary-container via-primary-container/40 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-8 text-white">
+<h3 class="font-headline text-3xl font-bold mb-2">Anti-Infectives</h3>
+<p class="text-blue-200 text-sm opacity-0 group-hover:opacity-100 transition-opacity">Broad-spectrum antibiotics and antiviral therapeutics.</p>
+</div>
+</div>
+</div>
+<div class="mt-20 flex justify-center">
+<button class="flex items-center gap-4 text-primary font-bold group">
+<span class="tracking-[0.2em] uppercase text-xs">View Full Catalog (1200+ Items)</span>
+<span class="w-12 h-[1px] bg-primary group-hover:w-20 transition-all"></span>
+</button>
+</div>
+</div>
+</section>
+<!-- 6. Procurement Lifecycle (Step-by-Step) -->
+<section class="py-16 md:py-32 bg-primary text-white" id="process">
+<div class="max-w-7xl mx-auto px-5 md:px-8">
+<div class="grid grid-cols-1 lg:grid-cols-4 gap-8 lg:gap-12">
+<div class="lg:col-span-1">
+<h2 class="font-headline text-3xl md:text-4xl font-extrabold mb-4 md:mb-6 tracking-tighter leading-tight">Procurement Lifecycle</h2>
+<p class="text-blue-200/70 mb-10">Our streamlined 4-step process ensures transparency and speed in global medical supply chains.</p>
+</div>
+<div class="lg:col-span-3">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-px bg-white/10">
+<div class="bg-primary p-7 md:p-12 hover:bg-white/5 transition-colors">
+<span class="text-5xl font-headline font-black text-on-primary-container/30 mb-8 block">01</span>
+<h3 class="text-2xl font-bold mb-4">Inquiry</h3>
+<p class="text-blue-100/60 text-sm">Submit your specific product requirements, volume needs, and target destination for initial feasibility check.</p>
+</div>
+<div class="bg-primary p-7 md:p-12 hover:bg-white/5 transition-colors">
+<span class="text-5xl font-headline font-black text-on-primary-container/30 mb-8 block">02</span>
+<h3 class="text-2xl font-bold mb-4">Review</h3>
+<p class="text-blue-100/60 text-sm">Our regulatory team reviews the inquiry against local market laws and manufacturing availability.</p>
+</div>
+<div class="bg-primary p-7 md:p-12 hover:bg-white/5 transition-colors">
+<span class="text-5xl font-headline font-black text-on-primary-container/30 mb-8 block">03</span>
+<h3 class="text-2xl font-bold mb-4">Quotation</h3>
+<p class="text-blue-100/60 text-sm">Detailed cost breakdown including manufacturing, logistics, and regulatory documentation fees.</p>
+</div>
+<div class="bg-primary p-7 md:p-12 hover:bg-white/5 transition-colors">
+<span class="text-5xl font-headline font-black text-on-primary-container/30 mb-8 block">04</span>
+<h3 class="text-2xl font-bold mb-4">Dispatch</h3>
+<p class="text-blue-100/60 text-sm">Real-time tracked global shipping with complete documentation for seamless customs clearance.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 7. Contact & Inquiry (The Portal) -->
+<section class="py-16 md:py-32 bg-surface" id="contact">
+<div class="max-w-7xl mx-auto px-5 md:px-8">
+<div class="bg-surface-container-lowest shadow-2xl overflow-hidden">
+<div class="flex flex-col lg:flex-row">
+<div class="lg:w-2/5 bg-on-secondary-fixed p-8 md:p-16 text-white">
+<h2 class="font-headline text-3xl md:text-4xl font-extrabold mb-6 md:mb-8">Inquiry Portal</h2>
+<p class="text-blue-200/60 mb-12">Connect with our global procurement experts for specialized medical sourcing.</p>
+<div class="space-y-10">
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-on-tertiary-container">location_on</span>
+<div>
+<h4 class="font-bold uppercase text-xs tracking-widest text-on-tertiary-container mb-2">Headquarters</h4>
+<p class="text-sm leading-relaxed text-blue-100">Global Logistics Park, Block A, Suite 402<br/>International Healthcare Zone</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-on-tertiary-container">mail</span>
+<div>
+<h4 class="font-bold uppercase text-xs tracking-widest text-on-tertiary-container mb-2">Global Inquiries</h4>
+<p class="text-sm text-blue-100"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="5d2d2f323e282f38303833291d2a38313e3230383a31323f3c31353e733e3230">[email&#160;protected]</a></p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-on-tertiary-container">public</span>
+<div>
+<h4 class="font-bold uppercase text-xs tracking-widest text-on-tertiary-container mb-2">Regional Offices</h4>
+<p class="text-sm text-blue-100">Mumbai, Dubai, London, Nairobi</p>
+</div>
+</div>
+</div>
+</div>
+<div class="lg:w-3/5 p-8 md:p-16">
+<form action="#" class="space-y-8">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="space-y-2">
+<label class="block text-xs font-bold uppercase tracking-widest text-on-secondary-container">Full Name</label>
+<input class="w-full bg-surface-container-high border-none p-4 focus:ring-1 focus:ring-on-primary-container" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="block text-xs font-bold uppercase tracking-widest text-on-secondary-container">Organization</label>
+<input class="w-full bg-surface-container-high border-none p-4 focus:ring-1 focus:ring-on-primary-container" type="text"/>
+</div>
+</div>
+<div class="space-y-2">
+<label class="block text-xs font-bold uppercase tracking-widest text-on-secondary-container">Region of Interest</label>
+<select class="w-full bg-surface-container-high border-none p-4 focus:ring-1 focus:ring-on-primary-container">
+<option>Select Region...</option>
+<option>Africa</option>
+<option>Latin America</option>
+<option>GCC / CIS</option>
+<option>SE Asia</option>
+<option>Europe</option>
+</select>
+</div>
+<div class="space-y-2">
+<label class="block text-xs font-bold uppercase tracking-widest text-on-secondary-container">Message / Product Specs</label>
+<textarea class="w-full bg-surface-container-high border-none p-4 focus:ring-1 focus:ring-on-primary-container" rows="4"></textarea>
+</div>
+<button class="w-full bg-on-primary-container text-white py-4 font-headline font-bold text-lg hover:bg-surface-tint transition-all">
+                                Send Secure Inquiry
+                            </button>
+</form>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer Shell -->
+<footer class="bg-slate-50 dark:bg-slate-900 w-full py-10 md:py-16 px-5 md:px-8 border-t border-slate-200 dark:border-slate-800">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 max-w-7xl mx-auto">
+<div class="col-span-1 md:col-span-1">
+<div class="font-manrope font-extrabold text-lg text-slate-900 dark:text-white mb-6">
+                    Welcome Global Healthcare
+                </div>
+<p class="font-inter text-xs tracking-wide text-slate-500 dark:text-slate-400 leading-relaxed">
+                    © 2024 Welcome Global Healthcare. All rights reserved. Precision in Global Logistics.
+                </p>
+</div>
+<div class="col-span-1">
+<h4 class="font-bold text-xs uppercase tracking-widest mb-6">Operations</h4>
+<ul class="space-y-4">
+<li><a class="font-inter text-xs tracking-wide text-slate-500 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 underline-offset-4 hover:underline" href="#">Global Offices</a></li>
+<li><a class="font-inter text-xs tracking-wide text-slate-500 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 underline-offset-4 hover:underline" href="#">Compliance</a></li>
+</ul>
+</div>
+<div class="col-span-1">
+<h4 class="font-bold text-xs uppercase tracking-widest mb-6">Governance</h4>
+<ul class="space-y-4">
+<li><a class="font-inter text-xs tracking-wide text-slate-500 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 underline-offset-4 hover:underline" href="#">Privacy Policy</a></li>
+<li><a class="font-inter text-xs tracking-wide text-slate-500 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 underline-offset-4 hover:underline" href="#">Terms of Service</a></li>
+</ul>
+</div>
+<div class="col-span-1">
+<h4 class="font-bold text-xs uppercase tracking-widest mb-6">Impact</h4>
+<ul class="space-y-4">
+<li><a class="font-inter text-xs tracking-wide text-slate-500 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 underline-offset-4 hover:underline" href="#">CSR Report</a></li>
+<li><a class="font-inter text-xs tracking-wide text-slate-500 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 underline-offset-4 hover:underline" href="#">Sustainability</a></li>
+</ul>
+</div>
+</div>
+<div class="max-w-7xl mx-auto mt-12 pt-8 border-t border-slate-200 dark:border-slate-800 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-slate-400">
+  <p>© 2024 Welcome Global Healthcare. All rights reserved.</p>
+  <div class="flex gap-6">
+    <a class="hover:text-blue-600 transition-colors" href="#">Privacy Policy</a>
+    <a class="hover:text-blue-600 transition-colors" href="#">Terms of Service</a>
+    <a class="hover:text-blue-600 transition-colors" href="#contact">Contact</a>
+  </div>
+</div>
+</footer>
+
+<script>
+  // Mobile Navigation
+  const mobileNavBtn = document.getElementById('mobile-nav-btn');
+  const mobileNavMenu = document.getElementById('mobile-nav-menu');
+  const mobileNavClose = document.getElementById('mobile-nav-close');
+  const mobileNavOverlay = document.getElementById('mobile-nav-overlay');
+
+  function openMobileNav() {
+    mobileNavMenu.classList.remove('hidden');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeMobileNav() {
+    mobileNavMenu.classList.add('hidden');
+    document.body.style.overflow = '';
+  }
+
+  mobileNavBtn && mobileNavBtn.addEventListener('click', openMobileNav);
+  mobileNavClose && mobileNavClose.addEventListener('click', closeMobileNav);
+  mobileNavOverlay && mobileNavOverlay.addEventListener('click', closeMobileNav);
+</script>
+</body>
+</html>
